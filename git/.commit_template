@@ -1,33 +1,32 @@
 
 
 # ==================== Emojis ====================
-# ➕  :add：新規（ファイル）機能追加
-# 🐛  :fix: バグ修正（Bagfix）
-# 🚑  :hotfix：クリティカルなバグ修正
-# ✨  :new_feature: 新機能（New Feature）
-# ⚡  :update：機能修正（バグではない）
-# 💥  :change：仕様変更
-# ♻️   :clean：整理（リファクタリング等）
-# 🔥  :remove：削除（ファイル）
-# ⬆️   :upgrade：バージョンアップ
-# ⬇️   :downgrade：バージョンダウン
-# ⏪  :revert：変更取り消し
-# ✅  :check: テストを追加
-# 🎉  :initial: 初めてのコミット（Initial Commit）
-# 🔖  :tag: バージョンタグ（Version Tag）
-# ♻️   :recycle: リファクタリング(Refactoring)
-# 📚  :books: ドキュメントを追加（Documentation）
-# 🎨  :art: デザインUI/UX(Accessibility)
-# 🐎  :horse: パフォーマンス（Performance）
-# 🔧  :wrench: ツール（Tooling）
-# 💩  :hankey: Unko
-# 🚧  :construction: WIP(Work In Progress)
-# 🐳  :whale: Docker
-# 🐧  :penguin: Linux
-
+# ➕  Add：新規（ファイル）機能追加
+# 🔧  Implement: 実装
+# 💥  change：破壊的仕様変更
+# 🐛  Fix: バグ修正（Bagfix）
+# 🚑  Hotfix：クリティカルなバグ修正
+# ✨  New_feature: 新機能（New Feature）
+# 🔖  Tag: バージョンタグ（Version Tag）
+# ⚡  Update：機能修正（バグではない）
+# ♻️   Clean：整理（リファクタリング等）
+# ♻️   Refactor: リファクタリング(Refactoring)
+# 🔥  Remove：削除（ファイル）
+# 🎉  Initial: 初めてのコミット（Initial Commit）
+# ⬆️   Upgrade：バージョンアップ
+# ⬇️   Downgrade：バージョンダウン
+# ⏪  Revert：変更取り消し
+# ✅  Check: テストを追加
+# 📚  Docs: ドキュメントを追加（Documentation）
+# 🎨  UI/UX: デザインUI/UX(Accessibility)
+# 🚀  Speed up: パフォーマンス（Performance）
+# 💩  hankey: Unko
+# 🚧  WIP: Work In Progress
+# 🐳  CI: Docker
+# 🐧  Linux: Linux
 
 # ====================================================================
-#                               example 
+#                    Commit message example 
 # ==================================================================== 
 #
 #

@@ -38,6 +38,16 @@ alias glo='git log --oneline'
 alias glp='git log -p'
 alias glog="git log --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn%x09%Creset%s' | tail -1 && echo '' && git status -s -b"
 
+
+
+# --------------------------
+# ssh
+# --------------------------
+
+alias ssh="cat ~/.ssh/conf.d/* > ~/.ssh/config; ssh"
+alias scp="cat ~/.ssh/conf.d/* > ~/.ssh/config; scp"
+#alias git="cat ~/.ssh/conf.d/* > ~/.ssh/config; git"
+
 # --------------------------
 # Docker
 # --------------------------

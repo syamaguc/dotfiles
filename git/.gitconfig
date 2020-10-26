@@ -1,0 +1,47 @@
+[user]
+	name = syamaguc
+	email = programmer2844@gmail.com
+
+[push]
+    	default = current
+
+[pull]
+	rebase = false
+
+[commit]
+    	template = ~/.commit_template
+
+[core]
+	excludesfile = ~/.gitignore_global
+	quotepath = false
+	editor = vim
+
+[color]
+	# Use colors in Git commands that are capable of colored output when outputting to the terminal
+	ui = auto
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+    	untracked = red bold
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+
+[alias]
+    	tree=log --graph --pretty=format:'%x09%C(auto) %h %Cgreen %ar %Creset%x09by"%C(cyan ul)%an%Creset" %x09%C(auto)%s %d'

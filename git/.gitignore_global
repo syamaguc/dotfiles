@@ -2,6 +2,7 @@
 #######################
 .env
 *rsa*
+known_hosts
 
 # Compiled source #
 ###################

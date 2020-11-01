@@ -26,4 +26,3 @@ else
     echo -e "\033[0;35minstall essentials\033[0;39m"
     sudo apt install -y $ESSENTIAlS
 fi
-

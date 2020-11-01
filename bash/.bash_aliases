@@ -2,7 +2,7 @@
 # bash
 # --------------------------
 alias bios='sudo systemctl reboot --firmware-setup'
-
+alias dist='cat /etc/lsb-release'
 # --------------------------
 # bash
 # --------------------------

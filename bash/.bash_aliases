@@ -3,10 +3,17 @@
 # --------------------------
 alias bios='sudo systemctl reboot --firmware-setup'
 alias dist='cat /etc/lsb-release'
+
 # --------------------------
 # bash
 # --------------------------
 alias bash='source ~/.bashrc'
+
+# --------------------------
+# Vim
+# --------------------------
+alias vim='nvim'
+alias vi='vim'
 
 # --------------------------
 # General

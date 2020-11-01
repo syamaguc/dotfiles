@@ -3,7 +3,7 @@
 # Dont link DS_Store files
 find . -name ".DS_Store" -exec rm {} \;
 
-PROGRAMS=(git stow vim bash config ssh)
+PROGRAMS=(git gdb stow vim bash config ssh)
 
 
 for program in ${PROGRAMS[@]}; do

@@ -10,12 +10,6 @@ alias dist='cat /etc/lsb-release'
 alias bash='source ~/.bashrc'
 
 # --------------------------
-# Vim
-# --------------------------
-alias vim='nvim'
-alias vi='vim'
-
-# --------------------------
 # General
 # --------------------------
 

@@ -1,0 +1,67 @@
+# https://clang.llvm.org/docs/ClangFormatStyleOptions.html
+
+AlignConsecutiveDeclarations: true
+AlignEscapedNewlinesLeft: true
+#AlignEscapedNewlines: Right
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowShortBlocksOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+BinPackArguments: true
+# BinPackArguments: false
+BinPackParameters: true
+# BinPackParameters: false
+BreakBeforeBraces: Allman
+BreakBeforeTernaryOperators: false
+ColumnLimit: 80
+IndentWidth: 4
+KeepEmptyLinesAtTheStartOfBlocks: false
+# KeepEmptyLinesAtTheStartOfBlocks: true
+MaxEmptyLinesToKeep: 1
+PointerAlignment: Right
+PenaltyBreakBeforeFirstCallParameter: 1
+PenaltyBreakString: 1
+PenaltyExcessCharacter: 0
+SpaceAfterCStyleCast: true
+# SpaceAfterCStyleCast: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens: ControlStatements
+SpaceInEmptyParentheses: false
+SpacesInCStyleCastParentheses: false
+SpacesInParentheses: false
+SpacesInSquareBrackets: false
+TabWidth: 4
+UseTab: Always
+#UseTab: ForIndentation
+
+
+AccessModifierOffset: 0
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: false
+AlignOperands:   true
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AlwaysBreakAfterDefinitionReturnType: None
+BraceWrapping:   
+   AfterControlStatement: true
+   AfterEnum:       true
+   AfterFunction:   true
+   AfterNamespace:  true
+   AfterStruct:     true
+   AfterUnion:      true
+   AfterExternBlock: true
+   BeforeCatch:     true
+   BeforeElse:      true
+   IndentBraces:    true
+   SplitEmptyFunction: true
+   SplitEmptyRecord: true
+BreakBeforeBinaryOperators: None
+BreakStringLiterals: true
+ContinuationIndentWidth: 4
+DisableFormat:   false
+IndentPPDirectives: AfterHash
+IndentWrappedFunctionNames: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles:  false

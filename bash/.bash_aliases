@@ -3,10 +3,6 @@
 # --------------------------
 alias bios='sudo systemctl reboot --firmware-setup'
 alias dist='cat /etc/lsb-release'
-
-# --------------------------
-# bash
-# --------------------------
 alias bash='source ~/.bashrc'
 
 # --------------------------
@@ -23,6 +19,13 @@ alias rm='rm -i'
 alias mkdir='mkdir -p'
 alias df='df -h'
 alias less='less -NM'
+
+
+# --------------------------
+# vim
+# --------------------------
+
+alias vimm='vim -u ~/.vim_runtime/vimrcs/minimal.vim'
 
 # --------------------------
 # git
@@ -57,10 +60,12 @@ alias scp="cat ~/.ssh/conf.d/* > ~/.ssh/config; scp"
 # --------------------------
 # Docker
 # --------------------------
-dstop() { docker stop $(docker ps -a -q);  }
-drm() { docker rm $(docker ps -a -q);  }
+dstop() { docker stop $(docker ps -a -q); }
+drm() { docker rm -f $(docker ps -aq); }
+drmi() { docker rmi -f $(docker images -aq); }
 dup() { docker-compose up -d;  }
-ddown() { docker-compose down;  }
+dupr() { docker-compose up -d --build; }
+ddown() { docker-compose down; }
 
 alias dl="docker ps -l -q"
 

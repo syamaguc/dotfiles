@@ -7,6 +7,12 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# helper function.
+
+if [ -f ~/.helper.sh ]; then
+    . ~/.helper.sh
+fi
+
 # env definitions.
 if [ -f ~/.env ]; then
     . ~/.env
@@ -60,7 +66,6 @@ if grep -qE "(Microsoft|WSL)" /proc/version &>/dev/null; then
     if [ "$(umask)" = "0000" ]; then
         umask 0022
     fi
-
     # Requires: https://sourceforge.net/projects/vcxsrv/ (or alternative)
     export DISPLAY=:0
 fi

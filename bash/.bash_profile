@@ -28,3 +28,4 @@ fi
 
 # Directory Color Setting
 eval $(dircolors -b ~/.dircolors)
+

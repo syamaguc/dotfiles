@@ -9,6 +9,7 @@ alias bash='source ~/.bashrc'
 # General
 # --------------------------
 
+alias path='echo $PATH | sed -e "s/:/\n/g"'
 alias ..='cd ..'
 alias ll='ls -alF'
 alias la='ls -A'
@@ -25,7 +26,7 @@ alias less='less -NM'
 # vim
 # --------------------------
 
-alias vimm='vim -u ~/.vim_runtime/vimrcs/minimal.vim'
+alias vi='vim -u ~/.vim_runtime/vimrcs/minimal.vim'
 
 # --------------------------
 # git
@@ -74,9 +75,9 @@ alias dl="docker ps -l -q"
 # python
 # --------------------------
 
-alias p='python3'
-alias python='python3'
-alias pip='pip3'
+#alias p='python3'
+#alias python='python3'
+#alias pip='pip3'
 
 # --------------------------
 # C/C++

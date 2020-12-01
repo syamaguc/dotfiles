@@ -1,0 +1,3 @@
+sudo apt install -y fonts-ipafont
+fc-cache -fv
+fc-list | grep -i ipa

@@ -3,7 +3,7 @@
 # Dont link DS_Store files
 find . -name ".DS_Store" -exec rm {} \;
 
-PROGRAMS=(git gdb stow vim bash config ssh)
+PROGRAMS=(git gdb stow vim bash config ssh xkb)
 
 BACKUPS=(.bash_profile .bashrc .bash_logout .zshrc .ssh .tmux.conf)
 

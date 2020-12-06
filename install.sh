@@ -1,3 +1,6 @@
+# caps lock ---> ctrl
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:nocaps']"
+
 sudo apt update -y
 sudo apt upgrade -y
 sudo snap refresh
@@ -16,7 +19,7 @@ if [ "$1" == "all" ]; then
         apt-get install  -y silversearcher-ag
         sudo apt install -y neovim
         # additionals
-        sudo apt install -y fcitx
+        sudo apt install -y fcitx fcitx-mozc
         sudo apt install -y x11-apps
         sudo apt install -y clang
         sudo apt install -y psensor

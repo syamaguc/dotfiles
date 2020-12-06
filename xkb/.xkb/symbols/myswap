@@ -1,0 +1,15 @@
+partial modifier_keys
+xkb_symbols "swapkeys" {
+  // backslash, underscore
+  key <AB11>  { [ backslash,underscore ] };
+  // yen
+  key <AE13>  { [ grave,asciitilde ] };
+  // muhenkan
+  key <MUHE>  { [ space,space ] };
+  // henkan
+  key <HENK>  { [ space,space ] };
+  // katakana hiragana
+  key <HKTG>  { [ Super_L,Super_L ] };
+  // hankaku zenkaku
+  key <TLDE>  { [ Escape,Escape ] };
+};

@@ -1,6 +1,10 @@
 # unbind Ctrl+s
 stty stop undef
 
+# keymap
+xkbcomp -I$HOME/.xkb ~/.xkb/keymap/mykbd $DISPLAY 2> /dev/null  
+
+
 # Alias definitions.
 
 if [ -f ~/.bash_aliases ]; then

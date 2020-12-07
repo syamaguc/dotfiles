@@ -25,6 +25,10 @@ if [ "$1" == "all" ]; then
         sudo apt install -y psensor
         # snaps
         sudo snap install htop
+        ./script/setup-python.sh
+        ./script/setup-nodejs.sh
+        ./script/setup-go.sh
+        ./script/setup-ipafont
     fi
 else
     echo -e "\033[0;35minstall essentials\033[0;39m"
@@ -35,3 +39,4 @@ else
 fi
 
 ./symlink.sh
+

@@ -32,6 +32,7 @@ if [ ! -d $(pyenv root)/versions/neovim2 ]; then
     pyenv install 2.7.15
     pyenv virtualenv 2.7.15 neovim2
 fi
+
 pyenv activate neovim2
 pip install --upgrade pip
 pip install neovim

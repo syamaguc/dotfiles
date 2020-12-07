@@ -1,7 +1,8 @@
 partial modifier_keys
 xkb_symbols "swapkeys" {
   // backslash, underscore
-  key <AB11>  { [ backslash,bar ] };
+  // key <AB11>  { [ backslash,bar ] };
+  replace key <AB11>  { [ Shift_R ] };
   // yen
   key <AE13>  { [ grave,asciitilde ] };
   // muhenkan

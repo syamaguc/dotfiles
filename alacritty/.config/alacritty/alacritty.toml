@@ -1,0 +1,9 @@
+import = ["~/.config/alacritty/color.toml","~/.config/alacritty/keybinding.toml"]
+
+
+[window]
+opacity = 0.9
+
+[font]
+size = 12
+normal = {family = "Hack Nerd Font"}

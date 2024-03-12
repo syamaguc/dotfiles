@@ -1,0 +1,183 @@
+# ==================================== #
+# => General settings
+# ==================================== #
+
+# set modifier
+set $superL Mod4
+set $altL Mod1
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+
+# set font
+font pango:Ricty Diminished 11
+
+# ==================================== #
+# => Startup Applications
+# ==================================== #
+
+exec_always --no-startup-id xmodmap ~/.Xmodmap
+exec_always --no-startup-id conky -d -c $HOME/.config/conky/conky.conf
+exec_always --no-startup-id conky -c $HOME/.config/conky/network.conf
+exec_always --no-startup-id picom -b
+exec_always --no-startup-id dropbox autostart
+exec_always --no-startup-id fcitx5 -r
+exec_always --no-startup-id autotiling -w 1 3 5
+exec_always --no-startup-id nm-applet --indicator
+exec_always --no-startup-id feh --bg-fill --randomize $HOME/Dropbox/Wallpaper/*
+
+
+# ==================================== #
+# => Mode settings
+# ==================================== #
+
+# enter fullscreen mode for the focused container
+bindsym $superL+Escape fullscreen toggle
+
+# toggle tiling / floating
+bindsym $superL+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $superL+Shift+space focus mode_toggle
+
+# Use Mouse+$superL to drag floating windows to their wanted position
+floating_modifier $superL
+
+# ==================================== #
+# => Moving
+# ==================================== #
+
+# change focus like vim
+bindsym $superL+h focus left
+bindsym $superL+j focus down
+bindsym $superL+k focus up
+bindsym $superL+l focus right
+
+# move focused window
+bindsym $superL+Shift+h move left
+bindsym $superL+Shift+j move down
+bindsym $superL+Shift+k move up
+bindsym $superL+Shift+l move right
+
+# switch to workspace
+bindsym $superL+1 workspace $ws1
+bindsym $superL+2 workspace $ws2
+bindsym $superL+3 workspace $ws3
+bindsym $superL+4 workspace $ws4
+bindsym $superL+5 workspace $ws5
+bindsym $superL+6 workspace $ws6
+bindsym $superL+7 workspace $ws7
+
+# move focused container to workspace
+bindsym $superL+Shift+1 move container to workspace $ws1; workspace $ws1
+bindsym $superL+Shift+2 move container to workspace $ws2; workspace $ws2
+bindsym $superL+Shift+3 move container to workspace $ws3; workspace $ws3
+bindsym $superL+Shift+4 move container to workspace $ws4; workspace $ws4
+bindsym $superL+Shift+5 move container to workspace $ws5; workspace $ws5
+bindsym $superL+Shift+6 move container to workspace $ws6; workspace $ws6
+bindsym $superL+Shift+7 move container to workspace $ws7; workspace $ws7
+
+
+# ==================================== #
+# => Key bindings
+# ==================================== #
+
+# i3-lock
+bindsym $superL+Shift+z exec bash $HOME/bin/i3-lock.sh
+
+# Screenshot
+bindsym --release $superL+p exec scrot -s ~/Pictures/Screenshot/%b%d-%H%M%S.png
+bindsym --release $superL+Shift+p exec gyazo
+
+# kill focused window
+bindsym $superL+Shift+d kill
+
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $superL+Shift+r reload;restart
+
+# start a terminal
+bindsym $superL+Return exec i3-sensible-terminal
+
+# start dmenu & rofi (a program launcher)
+bindsym $altL+Shift+space exec rofi -lines 12 -padding 18 -width 60 -location 0 -show window -sidebar-mode -columns 3 -font 'Ricty Diminished 18'
+bindsym $altL+space exec rofi -lines 12 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font 'Ricty Diminished 18'
+
+# shutdown menu in rofi
+bindsym $altL+Shift+q exec bash $HOME/bin/power.sh
+
+# common apps keybinds
+bindsym $superL+w exec google-chrome-stable
+bindsym $superL+Shift+w exec google-chrome-stable --incognito
+
+# ==================================== #
+# => Resize mode settings
+# ==================================== #
+bindsym $superL+r mode "resize"
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+        bindsym Left resize shrink width 50 px or 50 ppt
+        bindsym Down resize grow height 50 px or 50 ppt
+        bindsym Up resize shrink height 50 px or 50 ppt
+        bindsym Right resize grow width 50 px or 50 ppt
+	# back to normal: Escape
+        bindsym Escape mode "default"
+}
+
+# ==================================== #
+# => Bar Setting
+# ==================================== #
+bar {
+  		colors {
+  		  background #282A36
+  		  statusline #F8F8F2
+  		  separator  #44475A
+
+  		  focused_workspace  #44475A #44475A #F8F8F2
+  		  active_workspace   #282A36 #44475A #F8F8F2
+  		  inactive_workspace #282A36 #282A36 #BFBFBF
+  		  urgent_workspace   #FF5555 #FF5555 #F8F8F2
+  		  binding_mode       #FF5555 #FF5555 #F8F8F2
+  		}
+        font pango:Ricty Diminished 14
+        status_command i3blocks
+}
+
+# colour of border, background, text, indicator, and child_border
+# dracula ===>     https://github.com/dracula/i3
+
+# ==================================== #
+# => Color Setting
+# ==================================== #
+
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+
+# ==================================== #
+# => Applications specific setting
+# ==================================== #
+for_window [urgent=latest] focus
+
+# Using xprop to get class name for specific app.
+# workspace
+assign [class="Fcitx-config-gtk3"] $ws6
+
+# floating
+for_window [class="Fcitx-config-gtk3"] floating enable
+
+# i3-gaps
+smart_gaps on
+smart_borders on
+gaps inner 10
+gaps outer 5
